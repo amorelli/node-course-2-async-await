@@ -1,3 +1,5 @@
+/* This program fetches and prints to the console User grades using Promises */
+
 // Users objects
 const users = [{
 	id: 1,

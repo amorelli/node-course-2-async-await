@@ -1,4 +1,5 @@
-// http://data.fixer.io/api/latest?access_key=48ddf55564cf614560396ad363c77475&format=1
+// This program converts currency using rates from fixer.io API, using Promises.
+
 const axios = require('axios'); // Promise based HTTP client
 
 const getExchangeRate = async (from, to) => {

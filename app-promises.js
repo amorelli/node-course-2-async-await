@@ -1,3 +1,4 @@
+// Users objects
 const users = [{
 	id: 1,
 	name: 'Adam',
@@ -40,6 +41,7 @@ const getGrades = (schoolId) => {
 	});
 };
 
+// Return status using .then
 const getStatus = (userId) => {
 	let user;
 	return getUser(userId).then((tempUser) => {
@@ -50,13 +52,13 @@ const getStatus = (userId) => {
 
 		if (grades.length > 0) {
 			average = grades.map((grade) => grade.grade).reduce((a, b) => a + b) / grades.length;
-		}
-
+    }
+    
 		return `${user.name} has a ${average}% in the class.`;
-		console.log(average);
 	});
 };
 
+// Return status using async/await
 const getStatusAlt = async (userId) => {
 	const user = await getUser(userId);
 	const grades = await getGrades(user.schoolId);
@@ -74,9 +76,3 @@ getStatusAlt(1).then((status) => {
 }).catch((e) => {
 	console.log(e);
 });
-
-// getStatus(1).then((status) => {
-// 	console.log(status);
-// }).catch((e) => {
-// 	console.log(e);
-// });

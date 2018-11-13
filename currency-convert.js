@@ -1,4 +1,4 @@
-// This program converts currency using rates from fixer.io API, using Promises.
+/* This program converts currency using rates from fixer.io API, using Promises. */
 
 const axios = require('axios'); // Promise based HTTP client
 

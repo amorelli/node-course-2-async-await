@@ -3,5 +3,6 @@
 ### This project includes:
 * Functions written using .then Promise syntax
 * Functions using async/await Promise syntax
+* Fetching data from Fixer.io API
 ___
 2018 - Created by Adam Morelli as part of [The Complete NodeJS Developer Course](https://www.udemy.com/the-complete-nodejs-developer-course-2/learn/v4/content)
